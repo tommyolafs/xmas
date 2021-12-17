@@ -3,6 +3,11 @@ body {
 	font-family: arial;
 }
 
+h1 {
+	text-align: center;
+	font-family: cursive;
+}
+
 .red{
 	color: darkred;
 }
@@ -13,5 +18,9 @@ body {
 }
 
 .black {
-	color: black;
+	color: black;;
+}
+
+li {
+	font-size: larger;
 }
