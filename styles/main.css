@@ -1,12 +1,13 @@
 body {
 	background: lightgray;
 	font-family: arial;
+	font-size: 1.75em;
 }
 
 h1 {
 	text-align: center;
 	font-family: 'Moon Dance', cursive;
-	font-size: 3em;
+	font-size: 3.5em;
 }
 
 .red{
@@ -20,8 +21,4 @@ h1 {
 
 .black {
 	color: black;;
-}
-
-li {
-	font-size: 1.25em;
 }
