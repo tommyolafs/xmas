@@ -22,3 +22,7 @@ h1 {
 .black {
 	color: black;;
 }
+
+nav ul li {
+	list-style-type: inherit;
+}
