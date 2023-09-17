@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#wishlist {
+    position: relative;
+    margin: 25px 0;
+    text-align: center;
+    font-size: 150px;
+    background-color: red;
+    background-image: linear-gradient(90deg, rgb(254, 218, 17) 0%, rgb(237, 43, 9) 25%, rgba(98,65,151,1) 50%, rgba(50,117,183,1) 75%, rgba(22,241,29,1) 100%);
+    background-size: 40%;
+    background-position: 50%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 4;
+}
+
+.gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+.grid {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    --width: 444px;
+    --height: 250px;
+    position: relative;
+    width: 444px;
+    height: 250px;
+    margin: 30px;
+}
+
+.card > * {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.border {
+    width: calc(var(--width) + 6px);
+    height: calc(var(--height) + 6px);
+    background-color: white;
+    transform: translate(-3px, -3px);
+    z-index: 1;
+}
+
+.image {
+    width: var(--width);
+    height: var(--height);
+    z-index: 3;
+}
