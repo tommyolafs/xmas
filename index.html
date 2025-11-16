@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Christmas</title>
-	<link rel="icon" type="image/x-icon" href="assets/xmas-icon.ico" />
+	<link rel="icon" type="image/x-icon" href="images/xmas-icon.ico" />
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -21,43 +21,36 @@
 			- Psychology of Money (https://www.penninn.is/is/book/psychology-money)
 	-->
 
-	<div class="header">
-		<h1><a href="#">Jólagjafalisti</a></h1>
-		<ul class="header-menu">
-			<li><a href="#">Fyrri ár</a></li>
-			<li><a href="#">Um vefinn</a></li>
-		</ul>
-	</div>
-
 	<div class="landing-page">
-		<img class="tree-sticker sticker-one" src="./assets/christmas-tree.png" alt="christmas tree sticker">
-		<h2 class="center-text">Hvað vill Tómas fá undir <span class="green-gradient">tréð</span> í ár?</h2>
-		<img class="tree-sticker sticker-two" src="./assets/christmas-tree.png" alt="christmas tree sticker">
+		<div class="header">
+			<h1><a href="#">Jólagjafalisti</a></h1>
+			<ul class="header__menu">
+				<li><a href="#">Fyrri ár</a></li>
+				<li><a href="#">Um vefinn</a></li>
+			</ul>
+		</div>
+
+		<div class="main">
+			<img class="tree-sticker tree-one" src="./images/christmas-tree.png" alt="christmas tree sticker">
+			<h2 class="center-text">Hvað vill Tómas fá undir <span class="green-gradient">tréð</span> í ár?</h2>
+			<img class="tree-sticker tree-two" src="./images/christmas-tree.png" alt="christmas tree sticker">
+		</div>
 	</div>
 
 	<div class="list-page">
-		<h2 class="list-page-header green-gradient">Gleðileg jól!</h2>
+		<div class="list-page__header-container">
+			<img class="ornament-sticker ornament-one" src="./images/ornament-sticker.jpg" alt="red christmas ornament">
+			<h2 class="list-page__header green-gradient">Gleðileg jól!</h2>
+			<img class="ornament-sticker ornament-two" src="./images/ornament-sticker.jpg" alt="red christmas ornament">
+		</div>
+		
 		<ul class="list">
-			<li>Leikjamýs
-				<ul>
-					<li>Logitech G Pro X Superlight</li>
-					<li>Steelseries Rival 3 Gen 2</li>
-				</ul>
-			</li>
-
-			<li>Kassaviftur
-				<ul>
-					<li>Arctic P12 Max 120mm PWM</li>
-					<li>Gigabyte Aorus EZ Chain ARGB 120mm</li>
-				</ul>
-			</li>
-
-			<li>Bækur
-				<ul>
-					<li>Dragonquest</li>
-					<li>Psychology of Money</li>
-				</ul>
-			</li>
+			<li class="list-item item-one"><a href="#">Logitech G Pro X Superlight</a></li>
+			<li class="list-item item-two"><a href="#">Steelseries Rival 3 Gen 2</a></li>
+			<li class="list-item item-three"><a href="#">Arctic P12 Max 120mm PWM</a></li>
+			<li class="list-item item-four"><a href="#">Gigabyte Aorus EZ Chain 120mm</a></li>
+			<li class="list-item item-five"><a href="#">Dragonquest</a></li>
+			<li class="list-item item-six"><a href="#">Psychology of Money</a></li>
 		</ul>
 	</div>
 </body>

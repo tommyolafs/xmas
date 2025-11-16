@@ -1,0 +1,279 @@
+/*
+
+Color Palette (hex):
+ - Red: #c31919
+ - Subtle Pink: #bea6a1
+ - Dark Green: #255a00
+ - Light Green: #5a8c1b
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+body {
+    font-family: "Merriweather", serif;
+}
+
+.landing-page {
+    height: 100vh;
+    width: 100%;
+    background-color: #c31919;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex: 0;
+
+    background-color: rgba(0,0,0,0.2);
+    color: #ffffff;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 12px 16px;
+
+    font-family: "Merriweather", serif;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.header__menu {
+    display: flex;
+    column-gap: 24px;
+}
+
+.header__menu li {
+    box-sizing: border-box;
+    padding: 2px 0;
+
+    background-image: linear-gradient(#ffffff, #ffffff);
+    background-position: 0% 100%;
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+
+    transition: background-size 0.4s;
+}
+
+.header__menu li:hover {
+    background-size: 100% 2px;
+}
+
+.main {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%),
+                      radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%),
+                      radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%),
+                      radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%),
+                      radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%),
+                      radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%),
+                      radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%),
+                      radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%),
+                      radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%),
+                      radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%),
+                      radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%),
+                      radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%),
+                      radial-gradient(rgba(0,0,0,0.1) 50%, transparent 51%);
+    background-repeat: no-repeat;
+    background-size: 64px 64px,
+                     50px 50px,
+                     70px 70px,
+                     55px 55px,
+                     60px 60px,
+                     68px 68px,
+                     52px 52px,
+                     60px 60px,
+                     55px 55px,
+                     70px 70px,
+                     65px 65px,
+                     48px 48px,
+                     66px 66px;
+    background-position: 10% 20%,
+                         25% 45%,
+                         60% 55%,
+                         80% 30%,
+                         50% 25%,
+                         35% 85%,
+                         75% 65%,
+                         40% 15%,
+                         6% 90%,
+                         68% 8%,
+                         63% 88%,
+                         95% 57%,
+                         98% 22%;
+}
+
+.main * {
+    transform: translateY(-32px);
+}
+
+.center-text {
+    font-size: 60px;
+    font-family: "Parisienne", cursive;
+    text-align: center;
+    font-weight: 500;
+    width: 400px;
+}
+
+.tree-sticker {
+    width: 120px;
+    height: auto;
+}
+
+.tree-one {
+    rotate: -20deg;
+    margin-right: 24px;
+}
+
+.tree-two {
+    rotate: 20deg;
+    margin-left: 24px;
+}
+
+.list-page {
+    height: 100vh;
+    color: #ffffff;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+.list-page__header-container {
+    display: flex;
+}
+
+.list-page__header {
+    font-size: 60px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-height: 380px;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    box-sizing: border-box;
+    width: 288px;
+    height: 162px;
+    padding-top: 8px;
+
+    background-color: black;
+    background-size: 288px auto;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.list-item:hover {
+    transform: translateY(-12px);
+}
+
+.list-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* All list items individually */
+
+.item-one {
+    background-image: url(../images/superlight-mouse.png);
+    background-position: 16px -16px;
+}
+
+.item-two {
+    background-image: url(../images/rival-mouse.png);
+    background-size: 370px auto;
+    background-position: -55px 0;
+}
+
+.item-three {
+    background-image: url(../images/arctic-fan.png);
+    background-size: 430px auto;
+    background-position: -80px 0;
+}
+
+.item-four {
+    background-image: url(../images/aorus-fan.png);
+    background-position: -2px 25px;
+}
+
+.item-five {
+    background-image: url(../images/dragonquest-book.jpg);
+    background-position: 0 -100px;
+}
+
+.item-six {
+    background-image: url(../images/money-book.jpeg);
+    background-size: 450px auto;
+    background-position: -84px 0;
+}
+
+.ornament-sticker {
+    width: 120px;
+    height: auto;
+}
+
+.ornament-one {
+    transform: translate(-12px, -20px);
+    rotate: 15deg;
+}
+
+.ornament-two {
+    transform: translate(12px, -20px);
+    rotate: -15deg;
+}
+
+.green-gradient {
+    background: linear-gradient(135deg, #255a00, #5a8c1b);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+body, h1, h2, ul, li, p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tree-sticker, .ornament-sticker {
+    user-select: none;
+    pointer-events: none;
+}
