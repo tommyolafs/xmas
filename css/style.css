@@ -26,6 +26,10 @@ body {
     flex-direction: column;
 }
 
+.versions__landing-page {
+    height: 35vh;
+}
+
 .header {
     flex: 0;
 
@@ -130,6 +134,10 @@ body {
     width: 400px;
 }
 
+.versions__center-text {
+    width: 500px;
+}
+
 .tree-sticker {
     width: 120px;
     height: auto;
@@ -157,6 +165,10 @@ body {
     row-gap: 40px;
 }
 
+.versions__list-page {
+    height: 65vh;
+}
+
 .list-page__header-container {
     display: flex;
 }
@@ -171,6 +183,10 @@ body {
     gap: 24px;
     max-height: 380px;
     flex-wrap: wrap;
+}
+
+.versions__list {
+    flex-direction: row;
 }
 
 .list-item {
@@ -190,6 +206,14 @@ body {
 
 .list-item:hover {
     transform: translateY(-12px);
+}
+
+.versions__list-item {
+    width: 288px;
+    height: fit-content;
+
+    font-size: 72px;
+    font-family: "Modak", system-ui;
 }
 
 .list-item a {
