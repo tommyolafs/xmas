@@ -18,6 +18,7 @@ body {
 
 .landing-page {
     height: 100vh;
+    min-height: 350px;
     width: 100%;
     background-color: #c31919;
     color: #ffffff;
@@ -27,7 +28,7 @@ body {
 }
 
 .versions__landing-page {
-    height: 35vh;
+    height: 45vh;
 }
 
 .header {
@@ -155,6 +156,7 @@ body {
 
 .list-page {
     height: 100vh;
+    min-height: 650px;
     color: #ffffff;
     margin: auto;
 
@@ -166,7 +168,8 @@ body {
 }
 
 .versions__list-page {
-    height: 65vh;
+    height: 55vh;
+    min-height: 350px;
 }
 
 .list-page__header-container {
