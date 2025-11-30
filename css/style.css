@@ -177,6 +177,7 @@ body {
 }
 
 .list-page__header {
+    text-align: center;
     font-size: 60px;
 }
 
@@ -195,7 +196,7 @@ body {
 .list-item {
     box-sizing: border-box;
     width: 288px;
-    height: 162px;
+    aspect-ratio: 16/9;
     padding-top: 8px;
 
     background-color: black;
@@ -214,6 +215,7 @@ body {
 .versions__list-item {
     width: 288px;
     height: fit-content;
+    aspect-ratio: initial;
 
     font-size: 72px;
     font-family: "Modak", system-ui;
@@ -303,4 +305,65 @@ a {
 .tree-sticker, .ornament-sticker {
     user-select: none;
     pointer-events: none;
+}
+
+
+@media screen and (width < 950px) {
+    .landing-page {
+        height: 20vh;
+        min-height: 260px;
+    }
+
+    .main * {
+        transform: translateY(0);
+    }
+
+    .center-text {
+        font-size: 1.5rem;
+        width: 150px;
+    }
+
+    .tree-sticker {
+        width: 60px;
+        height: auto;
+    }
+    .tree-one {
+        rotate: -20deg;
+        margin-right: 12px;
+    }
+
+    .tree-two {
+        rotate: 20deg;
+        margin-left: 12px;
+    }
+
+    .list-page {
+        height: 100vh;
+        min-height: 350px;
+    }
+
+
+    .ornament-sticker {
+        width: 60px;
+        height: auto;
+    }
+
+    .ornament-one {
+        transform: translate(-12px, -12px);
+        rotate: 15deg;
+    }
+
+    .ornament-two {
+        transform: translate(12px, -12px);
+        rotate: -15deg;
+    }
+    
+    .list-page__header {
+        font-size: 2rem;
+    }
+
+    .list {
+        flex-direction: row;
+        max-width: 90vw;
+    }
 }
